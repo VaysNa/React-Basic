@@ -1,10 +1,10 @@
 import CoreConcept from "./CoreConcept";
 import { CORE_CONCEPTS } from "../data";
+import { Section } from "./Section";
 
 export default function CoreConcepts() {
   return (
-    <section id="core-concepts">
-      <h2>Core Concepts</h2>
+    <Section title="Core Concepts" id="core-concepts">
       <ul>
         {/* cara pake method map */}
         {CORE_CONCEPTS.map((item) => (
@@ -25,6 +25,6 @@ export default function CoreConcepts() {
         {/* <CoreConcept {...CORE_CONCEPTS[2]} />
             <CoreConcept {...CORE_CONCEPTS[3]} /> */}
       </ul>
-    </section>
+    </Section>
   );
 }
